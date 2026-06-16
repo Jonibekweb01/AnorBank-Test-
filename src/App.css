@@ -1,0 +1,29 @@
+.app {
+  min-height: 100vh;
+  padding: 40px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(109, 93, 252, 0.12),
+      transparent 35%
+    ),
+    #f8fafc;
+}
+
+.app__content {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 1100px) {
+  .app__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 20px;
+  }
+}
